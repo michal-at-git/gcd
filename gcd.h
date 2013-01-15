@@ -19,6 +19,7 @@ int gcd(int a, int b)
   
  if (a > 0) result = a;
  if (b > 0) result = b;
+ std::cout << result << "\n";
  return result;
 }
 #endif
