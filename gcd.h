@@ -5,6 +5,8 @@
 int gcd(int a, int b)
 {
   int result;
+  if (a != b)
+{
   while (a > 0 && b > 0)
   {
     if (a>b)
@@ -16,9 +18,11 @@ int gcd(int a, int b)
      b = b%a; 
     }
   }
-  
+}
+
  if (a > 0) result = a;
  if (b > 0) result = b;
+ if (a == b) result = a/b;
  std::cout << result << "\n";
  return result;
 }
